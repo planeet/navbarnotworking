@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heapidu</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/round-about.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Navigatsioon</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="esileht.html">Heapidu</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="batuudid.html">Batuudid</a>
+                    </li>
+					<li>
+                        <a href="atraktsioonid.html">Atraktsioonid</a>
+                    </li>
+					<li>
+                        <a href="telgid.html">Telgid</a>
+                    </li>
+					<li>
+                        <a href="tarvilik.html">Muu tarvilik</a>
+                    </li>
+					<li>
+                        <a href="galerii.html">Galerii</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+					</li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+   <!-- Page content -->
+
+    <div class="container">
+        <div class="row" id="kontaktivorm">
+            <div class="col-md-6">
+
+                <!--siia sisestasime kontaktivormiphp ühilduva -->
+                <form action="kontaktivorm/ktkvormiphp.php" method="POST">
+                    <br>
+
+                    <!--kliendi soovil jäi ainult viimane lause
+<p> Hea peo jaoks ei piisa vaid kartulisalatist ja ohtrast vägijoogist.  Meilt saate lisaks kõik vajaliku meelelahutuseks ja peavarjuks. Oleme tegelenud peotuju loomisega juba 10 aastat.-->
+                    <h2>Mõnus meelelahutus iga ilmaga!</h2>
+                    </p>
+
+                    <h3>Helista mulle 5331 2729 Marek</h3>
+                    <h3>Või saada kiri...</h3>
+                    <br>
+                    <!-- Start Contact Form -->
+                    <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake" method="post">
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" name="name" class="form-control" placeholder="Nimi" required data-error="Sisestage oma nimi">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="email" class="email form-control" name="email" placeholder="Email" required data-error="Sisestage oma e-mail">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" name="msg_subject" class="form-control" placeholder="Teema" required data-error="Sisestage sõnumi teema">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <textarea name="message" rows="7" placeholder="Sõnum" class="form-control" required data-error="Sisestage oma sõnum"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submit" class="btn btn-success">
+                            </i><span class="glyphicon glyphicon-envelope"></span> Saada</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+
+
+                    </form>
+            </div>
+
+
+
+
+            <!--siia proovime koos Jormaga panna kaardi-->
+
+
+            <div class="col-md-6">
+                <br>
+                <br>
+                <p>Caravan Grupp OÜ
+                    <br> Registrikood 11352015
+                    <br> Käibemaksukohustuslase number EE101142935</br>
+                </p>
+
+                <!--see pealkiri ei tundunud kohane--<h1>Asukoht kaardil</h1>-->
+
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2093.4047063605135!2d26.683108151684692!3d58.352843895876866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb376bf1491429%3A0x26d53afdb8344e84!2sAardla+120%2C+50415+Tartu!5e0!3m2!1sen!2see!4v1488624488152" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--   <footer>  
+                <div>
+				 Heapidu Copyright 20XX
+                </div>
+        </footer>
+
+    footer on eemaldatud-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="simplecontact/assets/js/jquery-min.js"></script>
+    <script type="text/javascript" src="simplecontact/assets/js/form-validator.min.js"></script>
+    <script type="text/javascript" src="simplecontact/assets/js/contact-form-script.js"></script>
+
+
+
+</body>
+
+</html>
